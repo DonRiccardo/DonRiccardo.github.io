@@ -1,0 +1,91 @@
+.article {
+	border-style: double none double none; 
+	border-color: black;
+	min-height: 100px;
+    width: 600px;
+	margin: 5px;
+    padding: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pInsideForm{
+	border-top: double;
+	border-color: black;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.hidden{
+	display: none;
+}
+
+.pageCounting{
+	font-family: 'Courier New', Courier, monospace;
+}
+
+html, button{
+	font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul > li{
+	margin: 5px;
+	padding-bottom: 10px;
+}
+
+ul > li:nth-child(even){
+	border-bottom: black 1px dashed;
+}
+
+.divArticleButtons{
+	float:right;
+    display: flex;
+    justify-content: space-between;
+	margin-top: 0px;
+}
+
+div > ul > li > div > button{
+	margin-left: 5px;
+}
+
+
+@font-face {
+	font-family: "myCustomFont";
+	src: url(Inspiration-Regular.ttf);
+}
+
+footer {
+	width: 600px;
+	height: 25px;
+	margin-top: 10px;
+	clear:both;
+	padding:10px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+	min-height: 50px;
+	text-align: center;
+	background-color: silver;
+    
+	border-radius: 7pt;
+}
+
+h1 {
+	color:#feb236;
+	margin:10px;
+	font-size:100px;
+	font-family: myCustomFont;
+}
+ 
+h2{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
