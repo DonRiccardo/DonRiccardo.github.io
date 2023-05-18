@@ -1,0 +1,42 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns5: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/DonRiccardo/UdDI/resources/DataCube/MeanPopulationCZE> a ns2:dataset ;
+    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/TRIDECENNIAL> ;
+    ns1:creator <https://github.com/DonRiccardo> ;
+    ns1:description "Entry datovej kocky"@sk ;
+    ns1:publisher <https://github.com/DonRiccardo> ;
+    ns1:spatial <http://publications.europa.eu/resource/authority/country/CZE> ;
+    ns1:title "Datová kocka pre stredný stav počtu obyvateľov v ČR, na základe okresov a krajov"@sk ;
+    ns4:prefLabel "Datová kocka stredného počtu obyvateľov v ČR, podľa okresov a krajov"@sk ;
+    ns2:distribution <https://github.com/DonRiccardo/UdDI/resources/DataCube/Distribution/> ;
+    ns2:keyword "kraj"@sk,
+        "okres"@sk,
+        "populacia"@sk,
+        "stredný stav počtu obyvateľov"@sk ;
+    ns2:theme <http://eurovoc.europa.eu/100210>,
+        <http://eurovoc.europa.eu/1773>,
+        <http://eurovoc.europa.eu/3318>,
+        <http://eurovoc.europa.eu/3326> .
+
+<https://github.com/DonRiccardo/UdDI/resources/DataCube/Distribution/> a ns2:distribution ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns1:license <https://github.com/DonRiccardo/UvoddoDatovehoInzenyrstvi/blob/55bdf474deb8d3e72258fcfadf10480a80f88c68/ukol01/license.txt> ;
+    ns2:accessURL <https://github.com/DonRiccardo/UvoddoDatovehoInzenyrstvi/blob/7da6b4434e35ad199ccac7ff2dd0c2822a67f0b8/ukol04/populationRDF.ttl> ;
+    ns2:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    ns5:checksum [
+    a ns5:Checksum ;
+      ns5:algorithm ns5:checksumAlgorithm_sha1 ;
+      ns5:checksumValue "528cf462f9921871b6a57e3cabb64adc31038dea"^^xsd:hexBinar 
+    ] .
+
+<https://github.com/DonRiccardo> a ns3:Agent,
+        ns3:Person ;
+    ns3:homepage <https://github.com/DonRiccardo> ;
+    ns3:mbox <mailto:richard.hvizdos@gmail.com> ;
+    ns3:name "Richard Hvizdoš"@sk .
+
