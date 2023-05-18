@@ -1,4 +1,4 @@
-.article {
+/*.article {
 	border-style: double none double none; 
 	border-color: black;
 	min-height: 100px;
@@ -24,18 +24,9 @@
 	font-family: 'Courier New', Courier, monospace;
 }
 
-html, button{
-	font-family: 'Courier New', Courier, monospace;
-}
 
-ul{
-	list-style-type: none;
-}
 
-ul > li{
-	margin: 5px;
-	padding-bottom: 10px;
-}
+
 
 ul > li:nth-child(even){
 	border-bottom: black 1px dashed;
@@ -51,7 +42,63 @@ ul > li:nth-child(even){
 div > ul > li > div > button{
 	margin-left: 5px;
 }
+*/
 
+html{
+	font-family: 'Courier New', Courier, monospace;
+
+}
+
+body{
+	min-height: 1200px;
+	position: relative;
+	background-color: #ffffff;
+	opacity: 1;
+	background-image: radial-gradient(#9e9e9e 1.85px, #ffffff 1.85px);
+	background-size: 37px 37px;
+	margin: 10px;
+}
+
+.nav{
+	padding: 10px;
+	margin: 10px;
+	width: auto;
+	background-color: floralwhite;
+	border-radius: 7pt;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul > li{
+	margin: 5px;
+	padding-bottom: 10px;
+}
+
+a{
+	text-decoration: none;
+	margin-top: 10px;
+	padding: 5px;
+	color: black;
+}
+
+a:hover{
+	background-color: bisque;
+	
+}
+
+a:visited{
+	color: black;
+}
+
+.warning{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	width: fit-content;
+}
 
 @font-face {
 	font-family: "myCustomFont";
@@ -59,23 +106,26 @@ div > ul > li > div > button{
 }
 
 footer {
-	width: 600px;
-	height: 25px;
 	margin-top: 10px;
-	clear:both;
-	padding:10px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 10px;
 }
 
-header{
-	min-height: 50px;
+header, footer{
+	min-height: 30px;
 	text-align: center;
-	background-color: silver;
-    
+	background-color: silver;    
 	border-radius: 7pt;
+	width: 100%;
+}
+
+.specialText {
+	
+	margin:10px;
+	font-weight: bold;
 }
 
 h1 {
@@ -86,6 +136,8 @@ h1 {
 }
  
 h2{
+	font-size: 30px;
+	color: red;
     padding-top: 0px;
     padding-bottom: 10px;
 }
